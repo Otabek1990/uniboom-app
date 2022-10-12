@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+# Jamoaviy Uniboom loyihasi qo'llanmasiga xush kelibsiz!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+README.md fayli sizga loyihani bajarishingizda qo'llanma sifatida xizmat qiladi.
+Quyidagi berilgan ketma ketlikni bajaring:
 
-## Available Scripts
+1. Ushbu reponi githubdan clone qilib olasiz
+2. Loyihani local'da ochib `npm install` buyrug'ini terminalga yozasiz.
+3. So'ngra `npm start` buyrugini yozasiz
 
-In the project directory, you can run:
 
-### `npm start`
+## Tavsiya etiladigan extensionlarni o'rnatib olish
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`.vscode\extensions.json` - ushbu file'da barcha kerakli bo'lgan, ishimizni
+osonlashtiradigan extensionlar ro'yhati berib o'tilgan. Har bitta extensionni
+install qilib olishingiz kerak bo'ladi. Install qilish uchun berilgan
+extensionning ID'isi maxsus extensionlar bo'limidan izlayasiz va **install**
+tugmasi bosasiz.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Bosqichlar
 
-### `npm test`
+Loyiha ustida qiynalmasdan ishlashingiz uchun uni ikkita qisimga bo'lib chiqdim.
+Har bir vazifa uchun alohida branch ochasiz (_vazifa-raqam-tavsifi_)
+ko'rinishida bo'lishi kerak. Misol uchun birinchi vazifa ustida ishlashni
+boshlayotgan bo'lsangiz quyidagicha ko'rinishda yangi branch ochasiz:
+`git checkout -b vazifa-1-verstka` Har bitta vazifani tugatganingizdan so'ng
+**PR raise** qilgan holda mendan **code review** request qilasiz.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+⚠️ Hech bir PR'ni mendan **approval** olmasdan asosiy branch'ga merge qilib
+yubormang. Approval olganingizdan so'nggina merge qilsangiz bo'ladi. Ogohlik
+barchamizning burchimizdur, ogoh bo'ling!
 
-### `npm run build`
+Ureeee, endi hamma narsa tayyor. Qo'llarni shimarib, coffee'ni damlab olib ☕,
+kod yozishga kirishsak ham bo'ladi 👩‍💻, barchaga omad ✊
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [1-bosqich: UI design](src/instructions/1-bosqich.md) (~10 kun)
+- [2-bosqich: React logic](src/instructions/2-bosqich.md) (~ kun)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Code review jarayoni: PR qanday qilib raise qilinadi?
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Yangi branchga o'tib, yangi bosqich ustida ishlashdan avval, **origin** va
+**main** pull qilib oling. Quyidagicha:
 
-### `npm run eject`
+```
+git pull origin main
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Deylik birinchi bosqchini tugatdingiz (vazifa-1-verstka branchda). Endi muammo
+bo'lmasligi uchun, har ehtimolga qarshi mainga o'tib `git pull origin main`
+buyrug'ini yana bir bor ishlatasiz. Undan so'ng, vazifa branchga o'tib
+(`git checkout vazifa-1-verstka`), quyidagi ketma ketlikni bajarasiz:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. `git add` va `git commit` o'z o'rnida ketaveradi. Buni bilasiz, ortiqcha
+   to'xtalishga xojat yo'q.
+2. Commitdan so'ng `git rebase -i master` - Interaktiv rebase buyrug'i
+   - [Interaktiv rebase haqida ma'lumot](https://www.youtube.com/watch?v=m-GIJOEh798&t=4s&ab_channel=Front-endSciencec%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B5%D0%BC%D0%9F%D1%83%D0%B7%D0%B0%D0%BD%D0%BA%D0%BE%D0%B2%D1%8B%D0%B)
+   - [Merge va Rebase'ning bir biridan farqi](https://www.youtube.com/watch?v=f1wnYdLEpgI&ab_channel=TheModernCoder)
+3. Rebase tugagandan so'ng, hammasi yaxshi bo'lsa,
+   `git push origin vazifa-1-verstka`. (⚠️ Mainga push qilmang hech qachon)
+4. Mandan review request qilasiz.
+5. Agar hammasi yaxshi bo'lsa, PR reviewdan o'tsa, keyin merge qilaverasiz. Aks
+   holda, PR'ni to'g'irlab, qaytadan review request qilasiz
+6. Aytilgan vazifalarni o'z vaqtida topshirish shart!
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
