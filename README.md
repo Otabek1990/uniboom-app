@@ -5,7 +5,7 @@ Quyidagi berilgan ketma ketlikni bajaring:
 
 1. Ushbu reponi githubdan clone qilib olasiz
 2. Loyihani local'da ochib `npm install` buyrug'ini terminalga yozasiz.
-3. So'ngra `npm start` buyrugini yozasiz
+3. So'ngra `npm run start` buyrugini yozasiz
 
 
 ## Tavsiya etiladigan extensionlarni o'rnatib olish
