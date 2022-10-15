@@ -1,9 +1,22 @@
 import React from 'react'
 
+import Vector2 from '../../assets/icons/arrow-down.svg'
+import global from '../../assets/icons/global.svg'
+
 function HeaderTop() {
   return (
-    <div>
-      <h1>header top</h1>
+    <div className="flex items-center justify-between px-24 h-12  py-2 ">
+      <div className="flex ">
+        <img src={global} alt="" className="pr-1" />
+        <p>русский</p>
+        <img src={Vector2} alt="nnnnn" className="text-gray-100" />
+        <p className="text-base text-gray-100 ml-10">Магазины</p>
+      </div>
+      <div className="right flex">
+        <p className="mr-6 text-base text-gray-100"> +99 899 999-99-99</p>
+        <p className="text-base text-gray-100">Связаться с нами</p>
+      </div>
+
     </div>
   )
 }
