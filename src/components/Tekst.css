@@ -1,0 +1,20 @@
+.Menu .cards .box1 p {
+    align-self: flex-end;
+
+}
+
+.Menu .cards .box1 p:first-of-type {
+    display: flex;
+    width: 100%;
+    justify-content: space-between !important;
+    white-space: nowrap;
+}
+
+.Menu .cards .box1 p:first-of-type:after {
+    content: "";
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px dotted rgba(204, 204, 204, 1);
+}
+

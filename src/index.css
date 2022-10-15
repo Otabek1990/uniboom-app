@@ -10,7 +10,7 @@
   font-style: normal;
   list-style-type: none;
   text-decoration: none;
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: 'pnum'on, 'lnum'on;
 }
 
 h1 {
@@ -24,6 +24,7 @@ h2 {
 h3 {
   @apply text-base;
 }
+
 input[type='number']::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
