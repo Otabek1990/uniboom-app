@@ -1,0 +1,7 @@
+.Homepageleft{
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+    
+    background: url("../../assets/images/slider_1.png") no-repeat center/cover;
+    background-position: right;
+}
