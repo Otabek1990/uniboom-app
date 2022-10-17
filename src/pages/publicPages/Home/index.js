@@ -1,15 +1,14 @@
 import React from 'react'
-import HomePageTop from './HomePageAdd/HomePageTop.jsx'
-import HomePageCenter from './HomePageAdd/HomePageCenter.jsx'
-import HomePageBottom from './HomePageAdd/HomePageBottom.jsx'
+import HomePageAds from './HomepageAds.jsx'
+import HomePageAdsBottom from './HomePageAdsBottom.jsx'
 
 function Home() {
   return (
     <div>
       <h1>Asosiy sahifa</h1>
-      <HomePageTop />
-      <HomePageCenter />
-      <HomePageBottom />
+      <HomePageAds bgColor="bg-red-500" />
+      <HomePageAds bgColor="bg-yellow" />
+      <HomePageAdsBottom />
     </div>
   )
 }
