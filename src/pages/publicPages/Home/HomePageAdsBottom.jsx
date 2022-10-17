@@ -13,7 +13,7 @@ function HomePageAdsBottom(props) {
             Ilovani ko'chiring va chegirma hamda <br /> aksiyalar haqida
             birinchi bo'lib biling!
           </h3>
-          <div className="w-50% flex pt-4">
+          <div className="flex pt-4">
             <button className="ml-1 px-5 py-1 flex items-center bg-white-100  rounded-md">
               <img src={googli} alt="" />
               <div className="text-left pl-2">
@@ -32,16 +32,16 @@ function HomePageAdsBottom(props) {
             </button>
           </div>
         </div>
-        <div className="w-50% flex justify-between text-center">
+        <div className=" flex text-right">
           <div className="w-full justify-between items-center text-center">
-            <div className="w-50% mr-4 relative">
+            <div className=" mr-4 relative">
               <img
                 className="absolute left-[-300px] top-[-70px]"
                 src={iphone}
                 alt=""
               />
             </div>
-            <div className=" flex justify-between items-center  text-right ">
+            <div className=" flex items-center  text-right ">
               <img src={scaner} alt="" />
               <h4 className="ml-8 text-white-100 text-left text-md font-semibold">
                 Yuklab olish <br /> uchun QR kod
