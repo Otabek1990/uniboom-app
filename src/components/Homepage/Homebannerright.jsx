@@ -4,18 +4,18 @@ import compbg from '../../assets/images/product_1.png'
 
 function Homebannerright() {
   return (
-    <div className="Homebannerright">
-      <div className="box   pt-20 border-0 bg-[#FAFAFA] rounded-lg h-full inline-block text-center">
-        <img className="px-8   " src={compbg} alt="" />
-        <p className="mac font-normal text-thin  ">
-          {' '}
-          MacBook Pro 13 inch 8/256/A2338{' '}
-        </p>
-        <span className="price font-md text-black mt-2.5 font-semibold block mb-3 ">
-          14 000 000 сум
-        </span>{' '}
-        <i className="fa fa-angle-left  mr-2 bg-blue-400 py-3 px-4 rounded"></i>
-        <i className="fa fa-angle-right bg-blue-400 py-3 px-4 rounded"></i>
+    <div className=" col-span-1 h-full py-12  px-16 border-0 bg-white-300 r rounded-lg  inline-block text-center  hover:shadow-lg   ">
+      <img src={compbg} alt="" />
+      <p className=" font-normal text-thin  ">
+        {' '}
+        MacBook Pro 13 inch 8/256/A2338{' '}
+      </p>
+      <span className=" font-md text-black mt-2.5 font-semibold block ">
+        14 000 000 сум
+      </span>
+      <div className=" mt-5 flex justify-center gap-4  ">
+        <i className="fa fa-angle-left text-white-100 hover:text-black bg-blue-400 inline py-3 px-4 rounded hover:shadow-xl "></i>
+        <i className="fa fa-angle-right text-white-100 hover:text-black bg-blue-400 inline py-3 px-4  rounded hover:shadow-xl"></i>
       </div>
     </div>
   )
