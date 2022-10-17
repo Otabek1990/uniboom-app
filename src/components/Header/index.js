@@ -4,9 +4,7 @@ import HeaderTop from './HeaderTop.jsx'
 
 function Header() {
   return (
-
-    <div className="w-10 p-[10px] max-w-full">
-
+    <div className="w-full bg-white-300">
       <HeaderTop />
       <HeaderBottom />
     </div>
