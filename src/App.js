@@ -1,9 +1,16 @@
 import React from 'react'
+import Footer from './components/Footer'
+import Header from './components/Header'
+import SignedUser from './SignedUser.jsx'
+import UnsignedUser from './UnsignedUser.jsx'
 
 function App() {
+  const loggedIn = false
   return (
-    <div className="App">
-      <h1 className="text-lg font-bold">Hello world</h1>
+    <div className="">
+      <Header />
+      {loggedIn ? <SignedUser /> : <UnsignedUser />}
+      <Footer />
     </div>
   )
 }
