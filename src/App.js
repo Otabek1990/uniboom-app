@@ -8,6 +8,7 @@ import New from './Components/ProductSlider/newProduct.jsx'
 function App() {
   return (
     <div className="">
+      <h1>new addad</h1>
       <Slider />
       <New />
     </div>
