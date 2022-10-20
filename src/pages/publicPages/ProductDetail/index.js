@@ -1,6 +1,6 @@
 import React from 'react'
 
-import ProductInfoImg from './ProductInfoImg'
+import ProductInfoImg from './ProductInfoImg.jsx'
 
 function ProductDetail() {
   return (
@@ -8,7 +8,6 @@ function ProductDetail() {
       <ProductInfoImg />
     </div>
   )
-
 }
 
 export default ProductDetail

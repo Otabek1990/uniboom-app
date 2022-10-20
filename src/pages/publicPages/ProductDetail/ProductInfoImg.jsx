@@ -1,88 +1,95 @@
 import React from 'react'
-import Noutbook from './assets/images/favorite_1.png'
-import Heart from './assets/icons/heart.svg'
-import Shop from './assets/icons/shopping-cart-white.svg'
-import Bag from './assets/icons/bag-2.svg'
-import Car from './assets/icons/car.svg'
-import RecoveryConvert from './assets/icons/recovery-convert.svg'
-import MoneyChange from './assets/icons/money-change.svg'
+import Noutbook from '../../../assets/images/favorite_1.png'
+import Heart from '../../../assets/icons/heart.svg'
+import Shop from '../../../assets/icons/shopping-cart-white.svg'
+import Bag from '../../../assets/icons/bag-2.svg'
+import Car from '../../../assets/icons/car.svg'
+import RecoveryConvert from '../../../assets/icons/recovery-convert.svg'
+import MoneyChange from '../../../assets/icons/money-change.svg'
+import ProductDeteilMap from '../../../components/productDeteilMap/ProductDeteilMap.jsx'
+import ProductDeteilSozlar from '../../../components/productDeteilMap/ProductDeteilSozlar.jsx'
+import ProductDeteilUsloviya from '../../../components/productDeteilMap/ProductDeteilUsloviya.jsx'
 
 function ProductInfoImg() {
+  const noutbook = [Noutbook, Noutbook, Noutbook, Noutbook, Noutbook]
+  const productHaqida = {
+    sozOn: [
+      'Бренд',
+      'Модель',
+      'Операционной системы',
+      'Цвет',
+      'Диагональ',
+      'Процессор',
+      'Оперативная память',
+      'Hard (SSD)',
+    ],
+    sozChap: [
+      'Apple',
+      'Macbook Air 13 2020',
+      'Mac OS',
+      'Silver',
+      '13.3”',
+      'M1',
+      '8 GB',
+      '256 GB',
+    ],
+  }
+  const usluga = {
+    uslugaOn: [
+      {text: 'Магазин', img: Bag},
+      {text: 'Доставка', img: Car},
+      {text: 'Условия возврата', img: RecoveryConvert},
+      {text: 'Способы оплаты', img: MoneyChange},
+    ],
+    uslugaChap: [
+      'BSB STORE',
+      'Есть',
+      'Есть, 10 дней',
+      'PayMe, Humo, UZCARD, Apelsin, Click',
+    ],
+  }
+
   return (
-    <div className="px-24">
+    <div>
       <div className=" mb-5">
         <h3 className="text-gray-200 w-1/4 text-base font-normal flex justify-between my-10">
-          <span>Каталог товаров</span> / <span>Электроника</span>/
-          <span className="text-[#000] font-bold">Ноутбуки</span>
+          <span>Каталог товаров</span> / <span>Электроника</span>
+          <span className="text-black-200 font-bold">Ноутбуки</span>
         </h3>
-        <h1 className="text-[1.5rem] leading-tight font-semibold">
+        <h1 className="text-md font-semibold">
           Ноутбук Apple Macbook Air 13 2020 / M1 / 8GB / 256GB / Apple graphics
           7-core, серебристый
         </h1>
         <h3 className="my-5 text-base font-bold">
-          Магазин: <span className="text-blue-300">BSB STORE</span>{' '}
+          Магазин: <span className="text-blue-300">BSB STORE</span>
         </h3>
       </div>
-      <div className="grid grid-flow-col auto-cols-auto gap-x-6 font-releway grid-rows-4  ">
+      <div className="grid grid-flow-col auto-cols-auto gap-x-6 font-releway grid-rows-4">
         <div className="grid grid-cols-6  row-span-4 ">
-          <div className="flex flex-col ">
-            <img
-              src={Noutbook}
-              alt="..."
-              className="border border-solid p-1 rounded  mb-5"
-            />
-            <img
-              src={Noutbook}
-              alt="..."
-              className="border border-solid p-1 rounded mb-5"
-            />
-            <img
-              src={Noutbook}
-              alt="..."
-              className="border border-solid p-1 rounded mb-5"
-            />
-            <img
-              src={Noutbook}
-              alt="..."
-              className="border border-solid p-1 rounded mb-5"
-            />
-            <img
-              src={Noutbook}
-              alt="..."
-              className="border border-solid p-1 rounded "
-            />
+          <div className="flex flex-col">
+            {noutbook.map((item, index) => (
+              <ProductDeteilMap key={index} item={item} />
+            ))}
           </div>
           <div className="col-span-5 ml-5">
             <img src={Noutbook} alt="..." className="w-full h-full" />
           </div>
         </div>
-        <div className="bg-[#FAFAFA] border border-solid border-gray-200 py-5 px-7 rounded-xl row-span-3">
+        <div className="bg-white-300 border border-solid border-gray-200 py-5 px-7 rounded-xl row-span-3">
           <div className="flex justify-between ">
             <div>
-              <p className="text-base font-semibold leading-tight text-[1.5rem] pb-5 ">
-                Коротко о продукте
-              </p>
+              <p className=" font-semibold text-md pb-5 ">Коротко о продукте</p>
               <h2>О продукте</h2>
               <div className=" font-normal text-gray-100 text-base">
-                <p className="mb-2">Бренд</p>
-                <p className="mb-2">Модель</p>
-                <p className="mb-2">Операционной системы</p>
-                <p className="mb-2">Цвет</p>
-                <p className="mb-2">Диагональ</p>
-                <p className="mb-2">Процессор</p>
-                <p className="mb-2">Оперативная память</p>
-                <p className="mb-2">Hard (SSD)</p>
+                {productHaqida.sozOn.map((item, index) => (
+                  <ProductDeteilSozlar key={index} item={item} />
+                ))}
               </div>
             </div>
             <div className="flex flex-col justify-end text-right ">
-              <p className="mb-2">Apple</p>
-              <p className="mb-2">Macbook Air 13 2020</p>
-              <p className="mb-2">MacOS</p>
-              <p className="mb-2">Silver</p>
-              <p className="mb-2">13.3”</p>
-              <p className="mb-2">M1</p>
-              <p className="mb-2">8 GB</p>
-              <p className="mb-2">256 GB</p>
+              {productHaqida.sozChap.map((item, index) => (
+                <ProductDeteilSozlar key={index} item={item} />
+              ))}
             </div>
           </div>
           <h3 className="text-center text-base font-bold text-blue-200">
@@ -118,30 +125,16 @@ function ProductInfoImg() {
               Купить в рассрочку
             </button>
           </div>
-          <div className="grid grid-cols-2 ">
+          <div className="grid grid-cols-2 mt-5 ">
             <div className="flex flex-col justify-between">
-              <h2 className="flex text-base font-normal">
-                <img src={Bag} alt="..." />
-                Магазин
-              </h2>
-              <h2 className="flex text-base font-normal">
-                <img src={Car} alt="..." />
-                Доставка
-              </h2>
-              <h2 className="flex text-base font-normal">
-                <img src={RecoveryConvert} alt="..." />
-                Условия возврата
-              </h2>
-              <h2 className="flex text-base font-normal">
-                <img src={MoneyChange} alt="..." />
-                Способы оплаты
-              </h2>
+              {usluga.uslugaOn.map((item, index) => (
+                <ProductDeteilUsloviya key={index} {...item} />
+              ))}
             </div>
             <div className="font-bold text-right">
-              <h2 className="text-base">BSB STORE</h2>
-              <h2 className="text-base">Есть</h2>
-              <h2 className="text-base">Есть, 10 дней</h2>
-              <h2 className="text-base">PayMe, Humo, UZCARD, Apelsin, Click</h2>
+              {usluga.uslugaChap.map((item, index) => (
+                <ProductDeteilSozlar key={index} item={item} />
+              ))}
             </div>
           </div>
         </div>
