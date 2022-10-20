@@ -4,7 +4,7 @@ import global from '../../assets/icons/global.png'
 
 function HeaderTop() {
   return (
-    <div className="flex items-center justify-between px-24 h-[50px] py-1 ">
+    <div className="flex items-center  justify-between px-24 h-[50px] py-1 ">
       <div className="flex items-center  ">
         <img src={global} alt="" className="pr-1 object-cover" />
         <p className="px-1 text-base">Русский</p>

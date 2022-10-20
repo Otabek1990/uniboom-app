@@ -36,7 +36,7 @@ function HeaderBottom() {
             Корзинка
           </p>
         </div>
-        <button className="bg-[transparent] border border-blue-200 px-4 py-2 rounded text-blue-200 ml-11 mr-5">
+        <button className="bg-[transparent] border border-blue-200 px-4 py-2 rounded text-blue-200 ml-11">
           Войти
         </button>
       </div>
