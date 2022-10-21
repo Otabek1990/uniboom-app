@@ -13,7 +13,6 @@ function App() {
       {loggedIn ? <SignedUser /> : <UnsignedUser />}
 
       <Footer />
-      <ProductDetail />
     </div>
   )
 }
