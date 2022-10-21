@@ -6,7 +6,7 @@ function CatalogSidebar() {
   return (
     <div className="w-96 bg-white-300 p-7 ">
       {catalogs.map((item, index) => (
-        <CatalogSidebarMap item={item} index={index} />
+        <CatalogSidebarMap key={item.id} item={item} index={index} />
       ))}
     </div>
   )
