@@ -36,6 +36,7 @@ module.exports = {
       gray: {
         100: '#999999',
         200: '#CCCCCC',
+        300: '#ECECEC',
       },
     },
     fontSize: {
