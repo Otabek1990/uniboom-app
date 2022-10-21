@@ -3,10 +3,9 @@
 import React from 'react'
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {Navigation} from 'swiper'
-import CardButton from '../CardBtn/index'
 import ShoppingCart from '../../assets/icons/shopping-cart.svg'
 import Heart from '../../assets/icons/heart.svg'
-import Btn from '../CardBtn/index'
+import UniversalBtn from '../UniversaBtn/Universalbtn'
 import Buy from '../../assets/icons/shopping-cart.svg'
 import heart from '../../assets/icons/heart.svg'
 
@@ -27,16 +26,16 @@ export default function RecommendSlider({
       <p className="text-black my-2.5 ">{title}</p>
       {price == '' ? (
         <div className="my-2.5"></div>
-        ) : (
+      ) : (
         <h6 className="text-gray-100 line-through">{price}</h6>
       )}
       <h6 className="text-blue-200 mb-5" style={{fontSize: '24px'}}>
         {salePrice}
       </h6>
       <div className="btns cardBottom flex whitespace-nowrap justify-between pt-[10px] border-t-[1px]">
-        <Btn icon={Buy} className="mr-2.5">
-          В корзину
-        </Btn>
+        <UniversalBtn icon={Buy} className="mr-2.5 ">
+          <img className="mr-2.5" src={ShoppingCart} alt="" />В корзину
+        </UniversalBtn>
         <img
           className="p-2 border border-white-200 rounded rounded-2 ml-5"
           src={heart}
