@@ -12,9 +12,9 @@ module.exports = {
       current: 'currentColor',
       transparent: 'transparent',
       yellow: '#F0A719',
-      black: '#171515',
       pink: '#F877DC',
       brown: '#BB7F0C',
+      black: {100: '#171515', 200: '#000'},
       white: {
         100: '#FFFFFF',
         200: '#ECECEC',
@@ -36,6 +36,7 @@ module.exports = {
       gray: {
         100: '#999999',
         200: '#CCCCCC',
+        300: '#ECECEC',
       },
     },
     fontSize: {
