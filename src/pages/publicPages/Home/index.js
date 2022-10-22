@@ -3,6 +3,8 @@ import Homebannerleft from './Homebannerleft.jsx'
 import Homebannerright from './Homebannerright.jsx'
 import HomePageAds from './HomepageAds.jsx'
 import HomePageAdsBottom from './HomePageAdsBottom.jsx'
+import Slider from './Product-slider/index'
+import NewProduct from './Product-slider/newProduct.jsx'
 
 function Home() {
   return (
@@ -11,9 +13,12 @@ function Home() {
         <Homebannerleft />
         <Homebannerright />
       </div>
+      <Slider />
 
       <HomePageAds bgColor="bg-red-500" />
+      <NewProduct about="Новые товары" seeAll="Все товары" />
       <HomePageAds bgColor="bg-yellow" />
+      <NewProduct />
       <HomePageAdsBottom />
     </div>
   )
