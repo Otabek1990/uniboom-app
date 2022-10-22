@@ -5,7 +5,7 @@ import BasketTotalSkore from './BasketTotalSkore.jsx'
 
 function BasketCard() {
   return (
-    <div className="px-24  ">
+    <div>
       <h1 className="font-raleway not-italic font-bold text-lg text-black my-8">
         Корзина
       </h1>

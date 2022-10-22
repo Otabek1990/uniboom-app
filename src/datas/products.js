@@ -24,7 +24,7 @@ const products = [
     image: RecommendTwo,
     title: 'Холодильник Samsung ART RB-31FERNDWW',
     discount: '',
-    price: '460999',
+    price: '',
     salePrice: '235 464',
     category: 'Recommend',
   },

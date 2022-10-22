@@ -6,7 +6,7 @@ function BasketMap({image, id, title, price, salePrice}) {
     <div className=" grid grid-cols-3  mt-4  last:border-none    border-b-2 border-solid border-gray-200 pb-4    ">
       <div className="flex  justify-between  ">
         <input type="checkbox" />
-        <img className="w-28 h-28 ml-4" src={image} alt="" />
+        <img className="w-28 h-24 ml-4" src={image} alt="" />
         <div className="ml-4">
           <h2 className="font-raleway  not-italic  font-bold text-base text-black ">
             {title}
@@ -29,7 +29,7 @@ function BasketMap({image, id, title, price, salePrice}) {
           </h2>
         </div>
       </div>
-      <div className="flex  items-start  justify-center ">
+      <div className="flex  items-start  justify-end ">
         <button
           onClick={() => count > 1 && setcount(count - 1)}
           className="bg-blue-200 flex items-center justify-center flex-col text-md w-10 h-10  text-white-300  rounded"
@@ -46,13 +46,20 @@ function BasketMap({image, id, title, price, salePrice}) {
           <span>+</span>
         </button>
       </div>
-      <div className=" flex justify-end items-start  mr-3  ">
-        <div className=" flex text-md1 text-black i ">
-          <h1 className="font-raleway not-italic  font-semibold text-md">
-            {/* {salePrice ? salePrice : ''} */}
+      <div className=" flex justify-start items-start  ml-52   ">
+        <div className=" flex text-md1 text-black  ">
+          <h1 className=" ">
+            {salePrice ? (
+              <h1 className="font-raleway not-italic   font-semibold text-md">
+                {salePrice}
+              </h1>
+            ) : (
+              <h1 className="font-raleway not-italic  font-semibold text-md">
+                {price}
+              </h1>
+            )}
           </h1>
-
-          <span className="font-raleway not-italic  font-bold text-base ml-1 flex  items-end">
+          <span className="font-raleway not-italic  font-bold text-base ml-1 flex  items-end ">
             сyм
           </span>
         </div>
