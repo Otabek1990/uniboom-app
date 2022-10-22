@@ -6,6 +6,7 @@ import ProductDeteilMap from './ProductDeteilMap.jsx'
 import ProductDeteilSozlar from './ProductDeteilSozlar.jsx'
 import ProductDeteilUsloviya from './ProductDeteilUsloviya.jsx'
 import {productDeteilMap} from '../../../datas/productDeteilMap'
+import FeedBacks from './Feedback/FeedBacks.jsx'
 
 function ProductInfo() {
   return (
@@ -102,6 +103,7 @@ function ProductInfo() {
           </div>
         </div>
       </div>
+      <FeedBacks />
     </div>
   )
 }

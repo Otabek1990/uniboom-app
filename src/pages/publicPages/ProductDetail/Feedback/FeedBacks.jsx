@@ -5,7 +5,7 @@ import FeedBacksTop from './FeedBacksTop.jsx'
 
 function FeedBacks() {
   return (
-    <div className=" px-24 w-[70%]">
+    <div className=" w-[70%] mt-14">
       <FeedBacksTop />
       <FeedBacksCenter />
       <FeedBacksBottom />
