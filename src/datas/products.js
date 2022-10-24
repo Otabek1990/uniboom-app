@@ -58,7 +58,7 @@ const products = [
   // new product
   {
     id: '6',
-    image: NewProductOne,
+    image: NewProductTwo,
     title: 'Macbook Pro 13 inch 2021 M1',
     discount: '',
     price: '',

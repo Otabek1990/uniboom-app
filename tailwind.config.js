@@ -40,7 +40,9 @@ module.exports = {
       },
     },
     fontSize: {
+
       xs: ['0.75rem', {lineHeight: '0.9rem'}],
+
       base: ['1rem', {lineHeight: '1.5rem'}],
       md: ['1.5rem', {lineHeight: '1.8rem'}],
       lg: ['2.25rem', {lineHeight: '2.7rem'}],
