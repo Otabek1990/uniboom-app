@@ -2,7 +2,7 @@ import React from 'react'
 
 function BasketTotalSkore() {
   return (
-    <div className=" border border-solid border-gray-200 rounded-lg  ml-5 py-3 px-7 h-[290px]">
+    <div className=" border border-solid border-gray-200 rounded-lg   py-3 px-7 h-[290px]">
       <h1 className="flex items-center">
         <span className="font-raleway not-italic font-bold text-lg text-black">
           Итого:
@@ -21,12 +21,12 @@ function BasketTotalSkore() {
       <button className="bg-blue-200 py-2 px-24 rounded w-[100%]  font-raleway not-italic font-normal  text-base text-white-300 mb-7">
         Оформить заказ
       </button>
-      <div className="flex ">
+      <div className="flex  ">
         <input type="checkbox" />
-        <label className="ml-2 text-base">
+        <h2 className="ml-2 text-xs ">
           Согласен с условиями правил пользования торговой площадкой и правилами
           возврата
-        </label>
+        </h2>
       </div>
     </div>
   )
