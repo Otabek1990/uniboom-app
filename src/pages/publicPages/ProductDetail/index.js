@@ -6,6 +6,7 @@ import ProductDeteilMap from './ProductDeteilMap.jsx'
 import ProductDeteilSozlar from './ProductDeteilSozlar.jsx'
 import ProductDeteilUsloviya from './ProductDeteilUsloviya.jsx'
 import {productDeteilMap} from '../../../datas/productDeteilMap'
+import ProductDescription from './productDescription'
 
 function ProductInfo() {
   return (
@@ -102,6 +103,7 @@ function ProductInfo() {
           </div>
         </div>
       </div>
+      <ProductDescription className="bg-white-100" />
     </div>
   )
 }
