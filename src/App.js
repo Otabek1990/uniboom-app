@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from './components/Footer'
 import Header from './components/Header'
+// import ProductDetailInfo from './pages/publicPages/ProductDetail/ProductDetailInfo.jsx'
 import SignedUser from './SignedUser.jsx'
 import UnsignedUser from './UnsignedUser.jsx'
 
@@ -12,6 +13,7 @@ function App() {
       {loggedIn ? <SignedUser /> : <UnsignedUser />}
 
       <Footer />
+      {/* <ProductDetailInfo /> */}
     </div>
   )
 }
