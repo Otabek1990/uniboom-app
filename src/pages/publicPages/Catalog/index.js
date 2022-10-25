@@ -1,10 +1,10 @@
 import React from 'react'
-import CatalogSidebar from './CatalogSidebar.jsx'
+import Catalogs from './Catalogs.jsx'
 
 function Catalog() {
   return (
     <div>
-      <CatalogSidebar />
+      <Catalogs />
     </div>
   )
 }
