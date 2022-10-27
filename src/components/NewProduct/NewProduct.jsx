@@ -1,10 +1,8 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable import/no-duplicates */
 import React from 'react'
-import {Swiper, SwiperSlide} from 'swiper/react'
-import {Navigation} from 'swiper'
+// import Heart from '../../assets/icons/heart.svg'
+/* eslint-disable import/no-duplicates */
+/* eslint-disable prettier/prettier */
 import ShoppingCart from '../../assets/icons/shopping-cart.svg'
-import Heart from '../../assets/icons/heart.svg'
 import UniversalBtn from '../UniversaBtn/Universalbtn'
 import Buy from '../../assets/icons/shopping-cart.svg'
 import heart from '../../assets/icons/heart.svg'
