@@ -1,6 +1,6 @@
 import React from 'react'
 import star from '../../../../assets/icons/star.svg'
-import star1 from '../../../../assets/icons/star1.svg'
+import star1 from '../../../../assets/icons/start1.svg'
 
 function FeedBacksCenter() {
   return (

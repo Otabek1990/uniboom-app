@@ -8,6 +8,9 @@ import ProductDeteilUsloviya from './ProductDeteilUsloviya.jsx'
 import {productDeteilMap} from '../../../datas/productDeteilMap'
 import {moreProduct} from './productData'
 import ProductDetailInfo from './ProductDetailInfo.jsx'
+import FeedBacksTop from './Feedbacks/FeedBacksTop.jsx'
+import FeedBacksCenter from './Feedbacks/FeedBacksCenter.jsx'
+import FeedBacksBottom from './Feedbacks/FeedBacksBottom.jsx'
 
 function ProductInfo() {
   return (
