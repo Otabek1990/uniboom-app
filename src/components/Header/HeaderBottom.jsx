@@ -8,7 +8,7 @@ import menu from '../../assets/icons/menu.svg'
 
 function HeaderBottom() {
   return (
-    <div className="flex items-center justify-between px-24 h-[70px] py-4 border-t border-solid">
+    <div className="flex items-center justify-between  px-24 h-[70px] py-4 border-t border-solid">
       <div className="flex">
         <Link to={'/'}>
           <img className="mr-10" src={logo} alt="" />
@@ -31,10 +31,10 @@ function HeaderBottom() {
             <img src={heart} alt="" className="pr-3" />
             Избранные
           </p>
-          <p className="flex items-center text-base ">
+          <Link to="/basket" className="flex items-center text-base ">
             <img src={cart} alt="" className="pr-3" />
             Корзинка
-          </p>
+          </Link>
         </div>
         <button className="bg-[transparent] border border-blue-200 px-4 py-2 rounded text-blue-200 ml-11">
           Войти

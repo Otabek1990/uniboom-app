@@ -48,8 +48,8 @@ export default function App({about, seeAll}) {
         className="mySwiper"
       >
         {recomended.map(post => (
-          <SwiperSlide>
-            <NewProduct key={post.id} {...post} />
+          <SwiperSlide key={post.id}>
+            <NewProduct {...post} />
           </SwiperSlide>
         ))}
       </Swiper>

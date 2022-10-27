@@ -1,6 +1,11 @@
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 
 function BasketTotalSkore() {
+  const navigate = useNavigate()
+  const getDeclaration = () => {
+    navigate(`/declaration`)
+  }
   return (
     <div className=" border border-solid border-gray-200 rounded-lg   py-3 px-7 h-[290px]">
       <h1 className="flex items-center">
@@ -18,7 +23,10 @@ function BasketTotalSkore() {
         Товары <p className="mx-1 ">4</p>
         шт.
       </h2>
-      <button className="bg-blue-200 py-2 px-24 rounded w-[100%]  font-raleway not-italic font-normal  text-base text-white-300 mb-7">
+      <button
+        onClick={getDeclaration}
+        className="bg-blue-200 py-2 px-24 rounded w-full  font-raleway  font-normal  text-base text-white-300 mb-7"
+      >
         Оформить заказ
       </button>
       <div className="flex  ">

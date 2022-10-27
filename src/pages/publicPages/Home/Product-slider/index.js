@@ -66,8 +66,8 @@ export default function App() {
         className="mySwiper"
       >
         {recomended.map(post => (
-          <SwiperSlide>
-            <RecommendSlider key={post.id} {...post} />
+          <SwiperSlide key={post.id}>
+            <RecommendSlider {...post} />
           </SwiperSlide>
         ))}
       </Swiper>
