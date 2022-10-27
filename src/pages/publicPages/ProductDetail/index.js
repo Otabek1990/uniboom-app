@@ -6,6 +6,8 @@ import ProductDeteilMap from './ProductDeteilMap.jsx'
 import ProductDeteilSozlar from './ProductDeteilSozlar.jsx'
 import ProductDeteilUsloviya from './ProductDeteilUsloviya.jsx'
 import {productDeteilMap} from '../../../datas/productDeteilMap'
+import {moreProduct} from './productData'
+import ProductDetailInfo from './ProductDetailInfo.jsx'
 
 function ProductInfo() {
   return (
@@ -100,6 +102,15 @@ function ProductInfo() {
               ))}
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className=" mt-16 ">
+        <div className="font-semibold">Этот товар в других магазинах</div>
+        <div>
+          {moreProduct.map(item => (
+            <ProductDetailInfo key={item.id} {...item} />
+          ))}
         </div>
       </div>
     </div>
