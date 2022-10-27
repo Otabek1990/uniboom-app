@@ -6,7 +6,7 @@ function ProductDescription() {
   return (
     <div className="py-8">
       {productSpecs.map(productSpec => (
-        <ProductSpecs {...productSpec} />
+        <ProductSpecs {...productSpec} key={productSpec.id} />
       ))}
       <button className="text-blue-200 text-md">Показать меньше</button>
     </div>
