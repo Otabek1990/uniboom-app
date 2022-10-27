@@ -43,10 +43,11 @@ export const catalogs = [
           'Игровые',
         ],
       },
-      {title: 'Планшеты', tabletItems: ['ТОПовые планшеты']},
-      {title: 'Мониторы', displayItems: ['']},
-      {title: 'Гарнитуры для PC', thingforPsItems: ['']},
+      {title: 'Планшеты', tabletItems: ['ТОПовые планшеты'], id: 4},
+      {title: 'Мониторы', displayItems: [''], id: 5},
+      {title: 'Гарнитуры для PC', thingforPsItems: [''], id: 6},
     ],
+    id: 1,
   },
   {
     catalogName: 'Техника для дома',
@@ -110,41 +111,51 @@ export const catalogs = [
         ],
       },
     ],
+    id: 2,
   },
   {
     catalogName: 'Телевизоры и теле карты',
     catalogDatas: [],
+    id: 3,
   },
   {
     catalogName: 'Офисная техника',
     catalogDatas: [],
+    id: 4,
   },
   {
     catalogName: 'Компьютерная техника',
     catalogDatas: [],
+    id: 5,
   },
   {
     catalogName: 'Товары для детей',
     catalogDatas: [],
+    id: 6,
   },
   {
     catalogName: 'Фото и видео',
     catalogDatas: [],
+    id: 7,
   },
   {
     catalogName: 'Электроника',
     catalogDatas: [],
+    id: 8,
   },
   {
     catalogName: 'Красота и здоровье',
     catalogDatas: [],
+    id: 9,
   },
   {
     catalogName: 'Спорт и увлечение',
     catalogDatas: [],
+    id: 10,
   },
   {
     catalogName: 'Игровые приставки',
     catalogDatas: [],
+    id: 11,
   },
 ]
