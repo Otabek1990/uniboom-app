@@ -6,8 +6,14 @@ import ProductDeteilMap from './ProductDeteilMap.jsx'
 import ProductDeteilSozlar from './ProductDeteilSozlar.jsx'
 import ProductDeteilUsloviya from './ProductDeteilUsloviya.jsx'
 import {productDeteilMap} from '../../../datas/productDeteilMap'
+<<<<<<< HEAD
 import {moreProduct} from './productData'
 import ProductDetailInfo from './ProductDetailInfo.jsx'
+=======
+import FeedBacksTop from './Feedbacks/FeedBacksTop.jsx'
+import FeedBacksBottom from './Feedbacks/FeedBacksBottom.jsx'
+import FeedBacksCenter from './Feedbacks/FeedBacksCenter.jsx'
+>>>>>>> d5b0c2b... Feedbacks-qismi
 
 function ProductInfo() {
   return (
@@ -104,6 +110,7 @@ function ProductInfo() {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <div className=" mt-14 ">
         <h3 className="font-semibold">Этот товар в других магазинах</h3>
         <div>
@@ -111,6 +118,12 @@ function ProductInfo() {
             <ProductDetailInfo key={item.id} {...item} />
           ))}
         </div>
+=======
+      <div className="w-[74%]">
+        <FeedBacksTop />
+        <FeedBacksCenter />
+        <FeedBacksBottom />
+>>>>>>> d5b0c2b... Feedbacks-qismi
       </div>
     </div>
   )
