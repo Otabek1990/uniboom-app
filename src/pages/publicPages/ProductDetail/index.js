@@ -105,7 +105,9 @@ function ProductInfo() {
         </div>
       </div>
       <div className=" mt-14 ">
-        <h3 className="font-semibold">Этот товар в других магазинах</h3>
+        <h3 className="font-semibold text-md text-black-100">
+          Этот товар в других магазинах
+        </h3>
         <div>
           {moreProduct.map(item => (
             <ProductDetailInfo key={item.id} {...item} />
