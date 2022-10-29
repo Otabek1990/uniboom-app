@@ -1,6 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/no-duplicates */
 import React from 'react'
+import {useNavigate} from 'react-router-dom'
 // import {Swiper, SwiperSlide} from 'swiper/react'
 // import {Navigation} from 'swiper'
 // import ShoppingCart from '../../assets/icons/shopping-cart.svg'
@@ -17,9 +18,13 @@ export default function RecommendSlider({
   salePrice,
   discount,
 }) {
+  const navigate = useNavigate()
+  const getDetail = () => {
+    navigate(`/productDetail/${id}`)
+  }
   return (
     <div className="p-5 bg-white-300 rounded ">
-      <img className="mb-4" src={image} alt="" />
+      <img onClick={getDetail} className="mb-4" src={image} alt="" />
       <span className="text-xs text=[12] text-white-300 p-2 bg-red-200 rounded">
         {discount} % скидка
       </span>
