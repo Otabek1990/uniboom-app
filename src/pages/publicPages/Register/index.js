@@ -3,7 +3,7 @@ import RegistrForm from './RegisterForm.jsx'
 
 function Register() {
   return (
-    <div>
+    <div className="mb-9">
       <RegistrForm />
     </div>
   )

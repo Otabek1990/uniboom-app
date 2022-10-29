@@ -3,7 +3,7 @@ import LoginForm from './LoginForm.jsx'
 
 function Login() {
   return (
-    <div>
+    <div className="mb-9">
       <LoginForm />
     </div>
   )

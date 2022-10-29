@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function RegistrForm() {
   return (
@@ -38,7 +39,13 @@ function RegistrForm() {
         <button className="bg-blue-200 rounded w-full py-2 text-white-300">
           Войти
         </button>
-        <p className="text-blue-200 text-xs self-start ">Уже есть аккаунт</p>
+
+        <Link
+          to={'/login'}
+          className="text-blue-200 text-xs self-start inline-block"
+        >
+          Уже есть аккаунт
+        </Link>
       </form>
     </div>
   )

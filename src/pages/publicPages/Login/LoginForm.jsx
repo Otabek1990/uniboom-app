@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 
 function LoginForm() {
   return (
@@ -36,7 +37,13 @@ function LoginForm() {
         </button>
         <div className="flex self-start ">
           <p className=" text-gray-100 text-xs  ">У вас нет аккаунта?</p>
-          <p className="text-blue-200 text-xs ml-1 ">Зарегистрируйтесь</p>
+
+          <Link
+            to={'/register'}
+            className="text-blue-200 text-xs ml-1 inline-block"
+          >
+            Зарегистрируйтесь
+          </Link>
         </div>
       </form>
     </div>

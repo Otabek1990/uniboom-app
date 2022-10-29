@@ -3,7 +3,7 @@ import React from 'react'
 /* eslint-disable import/no-duplicates */
 /* eslint-disable prettier/prettier */
 import {useNavigate} from 'react-router-dom'
-import ShoppingCart from '../../assets/icons/shopping-cart.svg'
+import ShoppingCart from '../../assets/icons/shopping-cart-white.svg'
 import UniversalBtn from '../UniversaBtn/Universalbtn'
 import Buy from '../../assets/icons/shopping-cart.svg'
 import heart from '../../assets/icons/heart.svg'

@@ -4,16 +4,16 @@ import global from '../../assets/icons/global.png'
 
 function HeaderTop() {
   return (
-    <div className="flex items-center  justify-between px-24 h-[50px] py-1 ">
+    <div className="flex items-center  justify-between px-24 h-[50px] py-3 ">
       <div className="flex items-center  ">
-        <img src={global} alt="" className="pr-1 object-cover" />
-        <p className="px-1 text-base">Русский</p>
+        <img src={global} alt="" className="object-cover" />
+        <p className="mx-1 text-base">Русский</p>
         <img src={Vector2} alt="nnnnn" className="text-gray-100" />
         <p className="text-base text-gray-100 ml-10">Магазины</p>
       </div>
-      <div className="right flex">
-        <p className="mr-6 text-base text-gray-100"> +99 899 999-99-99</p>
-        <p className="text-base text-gray-100">Связаться с нами</p>
+      <div className="right flex text-base text-gray-100">
+        <p className="mr-6"> +99 899 999-99-99</p>
+        <p>Связаться с нами</p>
       </div>
     </div>
   )

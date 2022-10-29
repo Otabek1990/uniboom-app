@@ -10,7 +10,6 @@ function App() {
     <div className="">
       <Header />
       {loggedIn ? <SignedUser /> : <UnsignedUser />}
-
       <Footer />
     </div>
   )
