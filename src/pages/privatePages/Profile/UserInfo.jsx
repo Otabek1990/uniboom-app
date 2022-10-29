@@ -42,7 +42,7 @@ function UserInfo() {
             <h1 className="text-base text-gray-100 mb-2 ">Пол</h1>
             <div className="flex">
               <div className="flex items-center">
-                <div className="h-6 w-6 border-[5px] solid rounded-full border-blue-300 mr-2.5 cursor-pointer ">
+                <div className="rounded-full border border-gray-200 w-6 h-6 hover:border-blue-300 hover:border-[5px] cursor-pointer ">
                   {/* <input
                     className=" h-full w-full  mb-10 absolute right-0"
                     type="radio"
@@ -52,7 +52,7 @@ function UserInfo() {
                 <p className="text-base font-bold mr-5 "> Муж.</p>
               </div>
               <div className="flex items-center">
-                <div className="h-6 w-6 border-[5px] solid rounded-full border-blue-300 mr-2.5 cursor-pointer ">
+                <div className="rounded-full border border-gray-200 w-6 h-6 hover:border-blue-300 hover:border-[5px] cursor-pointer ">
                   {/* <input
                     className=" h-full w-full absolute left-0"
                     type="radio"

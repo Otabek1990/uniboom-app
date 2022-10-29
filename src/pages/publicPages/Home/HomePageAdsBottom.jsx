@@ -7,7 +7,7 @@ import appicon from '../../../assets/icons/appicon.svg'
 function HomePageAdsBottom(props) {
   return (
     <div>
-      <div className="w-full bg-blue-300 flex rounded-xl my-14 px-24 py-8 items-center justify-between">
+      <div className="w-full bg-blue-300 flex rounded-xl my-14 px-24 py-8 items-center justify-between mb-20">
         <div className="w-1/2 ">
           <h3 className="text-md text-white-100 font-bold">
             Ilovani ko'chiring va chegirma hamda <br /> aksiyalar haqida
@@ -36,7 +36,7 @@ function HomePageAdsBottom(props) {
           <div className="w-full justify-between items-center text-center">
             <div className=" mr-4 relative">
               <img
-                className="absolute left-[-300px] top-[-70px]"
+                className="absolute left-[-300px] top-[-70px] "
                 src={iphone}
                 alt=""
               />

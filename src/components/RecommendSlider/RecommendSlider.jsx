@@ -6,7 +6,7 @@ import React from 'react'
 // import ShoppingCart from '../../assets/icons/shopping-cart.svg'
 // import Heart from '../../assets/icons/heart.svg'
 import UniversalBtn from '../UniversaBtn/Universalbtn'
-import Buy from '../../assets/icons/shopping-cart.svg'
+import Buy from '../../assets/icons/shopping-cart-white.svg'
 import heart from '../../assets/icons/heart.svg'
 
 export default function RecommendSlider({
@@ -21,7 +21,7 @@ export default function RecommendSlider({
     <div className="p-5 bg-white-300 rounded ">
       <img className="mb-4" src={image} alt="" />
       <span className="text-xs text=[12] text-white-300 p-2 bg-red-200 rounded">
-        {discount} скидка
+        {discount} % скидка
       </span>
       <p className="text-black my-2.5 ">{title}</p>
       {price === '' ? (

@@ -1,5 +1,5 @@
 import React from 'react'
-import magicpen from '../../../../assets/icons/magicpen (1).svg'
+import magicpen from '../../../../assets/icons/magicpen.svg'
 
 function FeedBacksTop() {
   return (
