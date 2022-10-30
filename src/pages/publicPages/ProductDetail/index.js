@@ -111,6 +111,11 @@ function ProductInfo() {
             <ProductDetailInfo key={item.id} {...item} />
           ))}
         </div>
+        <div className="w-3/4">
+          <FeedBacksTop />
+          <FeedBacksCenter />
+          <FeedBacksBottom />
+        </div>
       </div>
     </div>
   )
