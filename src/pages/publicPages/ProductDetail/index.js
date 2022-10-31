@@ -6,11 +6,15 @@ import ProductDeteilMap from './ProductDeteilMap.jsx'
 import ProductDeteilSozlar from './ProductDeteilSozlar.jsx'
 import ProductDeteilUsloviya from './ProductDeteilUsloviya.jsx'
 import {productDeteilMap} from '../../../datas/productDeteilMap'
+
+import ProductDescription from './productDescription'
+
 import {moreProduct} from './productData'
 import ProductDetailInfo from './ProductDetailInfo.jsx'
 import FeedBacksTop from './Feedbacks/FeedBacksTop.jsx'
 import FeedBacksCenter from './Feedbacks/FeedBacksCenter.jsx'
 import FeedBacksBottom from './Feedbacks/FeedBacksBottom.jsx'
+
 
 function ProductInfo() {
   return (
@@ -107,6 +111,9 @@ function ProductInfo() {
           </div>
         </div>
       </div>
+
+      <ProductDescription className="bg-white-100" />
+
       <div className=" mt-14 ">
         <h3 className="font-semibold text-md text-black-100">
           Этот товар в других магазинах
@@ -122,6 +129,7 @@ function ProductInfo() {
           <FeedBacksBottom />
         </div>
       </div>
+
     </div>
   )
 }
