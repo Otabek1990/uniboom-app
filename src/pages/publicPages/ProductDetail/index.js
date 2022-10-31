@@ -6,13 +6,21 @@ import ProductDeteilMap from './ProductDeteilMap.jsx'
 import ProductDeteilSozlar from './ProductDeteilSozlar.jsx'
 import ProductDeteilUsloviya from './ProductDeteilUsloviya.jsx'
 import {productDeteilMap} from '../../../datas/productDeteilMap'
+
 import ProductDescription from './productDescription'
+
+import {moreProduct} from './productData'
+import ProductDetailInfo from './ProductDetailInfo.jsx'
+import FeedBacksTop from './Feedbacks/FeedBacksTop.jsx'
+import FeedBacksCenter from './Feedbacks/FeedBacksCenter.jsx'
+import FeedBacksBottom from './Feedbacks/FeedBacksBottom.jsx'
+
 
 function ProductInfo() {
   return (
-    <div>
-      <div className=" mb-5">
-        <h3 className="text-gray-200 w-1/4 text-base font-normal flex justify-between my-10">
+    <div className=" py-8">
+      <div className="">
+        <h3 className="text-gray-200 w-1/4 text-base font-normal flex justify-between ">
           <span>Каталог товаров</span> / <span>Электроника</span>
           <span className="text-black-200 font-bold">Ноутбуки</span>
         </h3>
@@ -24,7 +32,7 @@ function ProductInfo() {
           Магазин: <span className="text-blue-300">BSB STORE</span>
         </h3>
       </div>
-      <div className="grid grid-flow-col auto-cols-auto gap-x-6 font-releway grid-rows-4">
+      <div className="grid grid-flow-col auto-cols-auto gap-x-6  grid-rows-4">
         <div className="grid grid-cols-6  row-span-4 ">
           <div className="flex flex-col">
             {productDeteilMap.noutbook.map((item, index) => (
@@ -103,7 +111,25 @@ function ProductInfo() {
           </div>
         </div>
       </div>
+
       <ProductDescription className="bg-white-100" />
+
+      <div className=" mt-14 ">
+        <h3 className="font-semibold text-md text-black-100">
+          Этот товар в других магазинах
+        </h3>
+        <div>
+          {moreProduct.map(item => (
+            <ProductDetailInfo key={item.id} {...item} />
+          ))}
+        </div>
+        <div className="w-3/4">
+          <FeedBacksTop />
+          <FeedBacksCenter />
+          <FeedBacksBottom />
+        </div>
+      </div>
+
     </div>
   )
 }

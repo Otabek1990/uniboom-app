@@ -1,8 +1,10 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/no-duplicates */
 import React from 'react'
-import {Swiper, SwiperSlide} from 'swiper/react'
-import {Navigation} from 'swiper'
+// import {Swiper, SwiperSlide} from 'swiper/react'
+// import {Navigation} from 'swiper'
+// import ShoppingCart from '../../assets/icons/shopping-cart.svg'
+// import Heart from '../../assets/icons/heart.svg'
 import UniversalBtn from '../UniversaBtn/Universalbtn'
 import Buy from '../../assets/icons/shopping-cart.svg'
 import heart from '../../assets/icons/heart.svg'
@@ -22,7 +24,7 @@ export default function RecommendSlider({
         {discount} скидка
       </span>
       <p className="text-black my-2.5 ">{title}</p>
-      {price == '' ? (
+      {price === '' ? (
         <div className="my-2.5"></div>
       ) : (
         <h6 className="text-gray-100 line-through">{price}</h6>

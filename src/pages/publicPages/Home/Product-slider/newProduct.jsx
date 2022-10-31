@@ -1,6 +1,6 @@
 /* eslint-disable import/order */
 /* eslint-disable import/no-unresolved */
-import React, {useRef, useState} from 'react'
+import React from 'react'
 // Import Swiper React components
 import {Swiper, SwiperSlide} from 'swiper/react'
 import {products} from '../../../../datas/products'
@@ -48,8 +48,8 @@ export default function App({about, seeAll}) {
         className="mySwiper"
       >
         {recomended.map(post => (
-          <SwiperSlide>
-            <NewProduct key={post.id} {...post} />
+          <SwiperSlide key={post.id}>
+            <NewProduct {...post} />
           </SwiperSlide>
         ))}
       </Swiper>
