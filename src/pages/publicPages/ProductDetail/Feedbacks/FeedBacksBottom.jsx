@@ -1,6 +1,6 @@
 import React from 'react'
-import Vector2 from '../../../../assets/icons/Vector2.svg'
-import Vector from '../../../../assets/icons/Vector1.svg'
+import Vector2 from '../../../../assets/icons/Vector (2).svg'
+import Vector from '../../../../assets/icons/Vector (1).svg'
 
 function FeedBacksBottom() {
   return (
