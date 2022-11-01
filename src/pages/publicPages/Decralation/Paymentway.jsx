@@ -2,7 +2,7 @@ import React from 'react'
 
 function Paymentway() {
   return (
-    <div className="mt-10">
+    <div className="my-10">
       <h5 className="font-semibold text-md text-black-100"> Способы оплаты</h5>
       <div className=" w-fit grid grid-cols-2 gap-5">
         <div className=" w-96 flex gap-4 items-center border rounded-md   py-4 pl-8 mt-5 ">
