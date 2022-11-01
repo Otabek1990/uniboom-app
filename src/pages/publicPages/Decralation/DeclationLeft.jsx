@@ -1,4 +1,6 @@
 import React from 'react'
+import IdKarta from './IdKarta.jsx'
+import Zakaz from './Zakaz.jsx'
 import Paymentway from './Paymentway.jsx'
 
 function DeclationLeft() {
@@ -34,7 +36,9 @@ function DeclationLeft() {
           />
         </div>
       </div>
+      <Zakaz />
       <Paymentway />
+      <IdKarta />
     </div>
   )
 }
