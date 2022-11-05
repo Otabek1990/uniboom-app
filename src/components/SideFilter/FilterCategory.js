@@ -11,6 +11,7 @@ function FilterCategory({text, types}) {
       {types.map(type => (
         <ItemCheck type={type} />
       ))}
+      <button className="text-blue-200 text-base">Показать меньше</button>
     </ul>
   )
 }

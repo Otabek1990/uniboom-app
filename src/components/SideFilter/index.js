@@ -5,7 +5,7 @@ import {filterTypes} from './SideFilterDatas'
 function SideFilter() {
   return (
     <ul className="w-72 text-base p-7">
-      <h2 className="text-md">Смартфоны Apple</h2>
+      <h2 className="text-md font-bold mb-1">Смартфоны Apple</h2>
       <p className="text-gray-100">159 товаров</p>
       <li className="flex justify-between my-7">
         <button className="font-bold">Цена</button>
@@ -14,11 +14,11 @@ function SideFilter() {
       <li className="flex justify-between mb-7">
         <input
           type="number"
-          className="w-[6.875rem] border-2 border-gray-2000 outline-0 px-2"
+          className="w-[6.875rem] border-2 border-gray-2000 outline-0 p-2"
         />
         <input
           type="number"
-          className="w-[6.875rem] border-2 border-gray-2000 outline-0 px-2"
+          className="w-[6.875rem] border-2 border-gray-2000 outline-0 p-2"
         />
       </li>
       <li>
